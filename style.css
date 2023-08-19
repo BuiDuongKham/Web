@@ -1,0 +1,14 @@
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.link:hover{
+    color: #8181dc;
+    transition-duration: 1s;
+    transition-property: color;
+}
+th,td{
+    vertical-align: top;
+    border: 1px solid;
+}
