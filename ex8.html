@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <div style="display: flex; justify-content: center; font-weight: bold; text-transform: uppercase"> đóng góp ý
+            kiến
+        </div>
+        <div style="display: flex; justify-content: center; align-items: start; margin-top: 10px; flex-direction: column">
+            <div style="display: flex; align-items: baseline; gap: 4px">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" placeholder="">
+                <div>Giới tính</div>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Nam</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Nữ</label>
+            </div>
+        </div>
+        <div>
+            <div>Những mục bạn thường quan tâm trên Internet:</div>
+            <div>
+                <input id="news" type="checkbox">
+                <label for="news">Tin tức</label>
+            </div>
+            <div>
+                <input id="entertainment" type="checkbox">
+                <label for="entertainment">Giải trí</label>
+            </div>
+            <div>
+                <input id="study" type="checkbox">
+                <label for="study">Góc học tập</label>
+            </div>
+            <div>
+                <input id="others" type="checkbox">
+                <label for="others">Các mục khác</label>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 4px">
+            <button type="submit">Gửi</button>
+            <button type="reset">Hủy</button>
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>

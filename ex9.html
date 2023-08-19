@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="select">Liên kết website</label>
+        <select id="select" name="select">
+            <option value="none">Tin tuc</option>
+            <option value="laodong.vn">Báo lao động</option>
+            <option value="vnexpress.net">Tin nhanh Việt Nam</option>
+            <option value="tuoitre.vn">Báo tuổi trẻ</option>
+        </select>
+    </form>
+    <script>
+        const select = document.getElementById("select")
+        select.addEventListener("change", (e)=>{
+            console.log(e.target.value)
+            if (e.target.value !== "none") {
+                window.open(`https://${e.target.value}`)
+            }
+        })
+    </script>
+</body>
+</html>

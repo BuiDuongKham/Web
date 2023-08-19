@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input, select {
+            height: 30px;
+        }
+
+        * {
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div style="display: flex; justify-content: center; font-weight: bolder; font-family: 'Bell MT','serif'; font-size: xxx-large; color: #0059ff ">
+    facebook
+</div>
+<form style="width: 100%; display: flex; justify-content: center">
+    <div style="width: 80%">
+        <fieldset style="box-shadow: 1px 1px gray; border: thin solid;">
+            <div style="display: flex; flex-direction: column; align-items: center">
+                <div style="font-size: 1.5em; font-weight: bolder">
+                    Tạo tài khoản mới
+                </div>
+                <div style="color: #b9adad">
+                    Nhanh chóng và dễ dàng.
+                </div>
+            </div>
+            <hr/>
+            <div style="display: flex; flex-direction: column; gap: 10px; padding: 10px">
+                <div style="width: 100%;display: flex; justify-content: space-between; gap: 10px">
+                    <label style="display: none" for="surname">Họ</label>
+                    <input style="padding: 0" id="surname" name="surname" placeholder="Họ">
+                    <label style="display: none" for="firstname">Tên</label>
+                    <input style="padding: 0" id="firstname" name="firstname" placeholder="Tên">
+                </div>
+                <div style="width: 100%; box-sizing: border-box">
+                    <label style="display: none" for="contact"></label>
+                    <input style="width: 100%" id="contact" name="contact"
+                           placeholder="Số điện thoại di động hoặc email">
+                </div>
+            </div>
+            <div style="padding: 10px">
+                <label style="display: none" for="password"></label>
+                <input type="password" style="width: 100%" id="password" name="password" placeholder="Mật khẩu mới">
+            </div>
+            <div style="padding: 10px">
+                <div>
+                    <label style="color: #7e6d6d" for="birthday">Ngày sinh</label>
+                </div>
+                <div style="display: flex; gap: 10px">
+                    <select style="width: 100%" name="birthday" id="birthday">
+                        <option value="day">Ngày</option>
+                        <option value="day">1</option>
+                        <option value="day">2</option>
+                        <option value="day">3</option>
+                        <option value="day">4</option>
+                        <option value="day">5</option>
+                        <option value="day">6</option>
+                        <option value="day">7</option>
+                        <option value="day">8</option>
+                        <option value="day">9</option>
+                        <option value="day">10</option>
+                        <option value="day">11</option>
+                        <option value="day">12</option>
+                        <option value="day">13</option>
+                        <option value="day">14</option>
+                        <option value="day">15</option>
+                        <option value="day">16</option>
+                        <option value="day">17</option>
+                        <option value="day">18</option>
+                        <option value="day">19</option>
+                        <option value="day">20</option>
+                        <option value="day">21</option>
+                        <option value="day">22</option>
+                        <option value="day">23</option>
+                        <option value="day">24</option>
+                        <option value="day">25</option>
+                        <option value="day">26</option>
+                        <option value="day">27</option>
+                        <option value="day">28</option>
+                        <option value="day">29</option>
+                        <option value="day">30</option>
+                        <option value="day">31</option>
+                    </select>
+                    <select style="width: 100%" name="birthmonth" id="month">
+                        <option value="month">Tháng</option>
+                        <option value="month">1</option>
+                        <option value="month">2</option>
+                        <option value="month">3</option>
+                        <option value="month">4</option>
+                        <option value="month">5</option>
+                        <option value="month">6</option>
+                        <option value="month">7</option>
+                        <option value="month">8</option>
+                        <option value="month">9</option>
+                        <option value="month">10</option>
+                        <option value="month">11</option>
+                        <option value="month">12</option>
+                    </select>
+                    <select style="width: 100%" name="birthyear" id="year">
+                        <option value="year">Năm</option>
+                        <option value="year">2021</option>
+                        <option value="year">2020</option>
+                        <option value="year">2019</option>
+                        <option value="year">2018</option>
+                        <option value="year">2017</option>
+                        <option value="year">2016</option>
+                        <option value="year">2015</option>
+                        <option value="year">2014</option>
+                        <option value="year">2013</option>
+                        <option value="year">2012</option>
+                        <option value="year">2011</option>
+                        <option value="year">2010</option>
+                        <option value="year">2009</option>
+                        <option value="year">2008</option>
+                        <option value="year">2007</option>
+                        <option value="year">2006</option>
+                        <option value="year">2005</option>
+                        <option value="year">2004</option>
+                        <option value="year">2003</option>
+                        <option value="year">2002</option>
+                        <option value="year">2001</option>
+                        <option value="year">2000</option>
+                        <option value="year">1999</option>
+                        <option value="year">1998</option>
+                        <option value="year">1997</option>
+                        <option value="year">1996</option>
+                        <option value="year">1995</option>
+                        <option value="year">1994</option>
+                        <option value="year">1993</option>
+                        <option value="year">1992</option>
+                        <option value="year">1991</option>
+                        <option value="year">1990</option>
+                        <option value="year">1989</option>
+                        <option value="year">1988</option>
+                        <option value="year">1987</option>
+                        <option value="year">1986</option>
+                        <option value="year">1985</option>
+                        <option value="year">1984</option>
+                        <option value="year">1983</option>
+                        <option value="year">1982</option>
+                    </select>
+                </div>
+            </div>
+            <div style="padding: 10px">
+                <div>
+                    Giới tính
+                </div>
+                <div style="display: flex; justify-content: space-between">
+                    <div style="display: flex; justify-content: center; align-items: center; gap:10px; border: 1px solid; border-radius: 5px; padding:10px">
+                        <label for="female">Nữ</label>
+                        <input type="radio" id="female" name="gender">
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; border: 1px solid; border-radius: 5px; padding:10px">
+                        <label for="male">Nam</label>
+                        <input type="radio" id="male" name="gender">
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center; gap:10px; border: 1px solid; border-radius: 5px; padding:10px">
+                        <label for="other">Tùy chỉnh</label>
+                        <input type="radio" id="other" name="gender">
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 10px; color: #7e6d6d; font-size: small; text-decoration: none">
+                Bằng cách nhấp vào Đăng ký, bạn đồng ý với <a href="#">Điều khoản</a>, <a href="#">Chính sách dữ liệu</a>
+                và <a href="#">Chính sách cookie</a> của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và
+                hủy nhận bất kỳ lúc nào.
+            </div>
+            <div style="padding: 10px; display: flex; justify-content: center">
+                <button style="width: 30%; height: 40px; border-radius: 5px; background-color: #00a400; color: white; font-weight: bolder; font-size: large" type="submit">Đăng ký</button>
+            </div>
+            <div style="padding: 10px; display: flex; justify-content: center">
+                <a href="#" >
+                    Bạn đã có tài khoản ư?
+                </a>
+            </div>
+        </fieldset>
+    </div>
+</form>
+</body>
+</html>

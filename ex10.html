@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            border: solid;
+            border-collapse: collapse;
+        }
+        tr, td{
+            border: solid;
+            border-collapse: collapse;
+            padding: 4px 10px 4px 10px;
+        }
+
+        label{
+            color: #537C2EFF
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div style="display: flex; justify-content: center; color: #537c2e; font-weight: bold">
+                Phiếu đăng kí tham gia chương trình khuyến mãi
+            </div>
+            <table>
+                <tr>
+                    <td><label for="name">Họ và tên</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Địa chỉ</label></td>
+                    <td><input type="text" id="address" name="address"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Điện thoại</label></td>
+                    <td><input type="text" id="phone" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Phái</td>
+                    <td>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Nam</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="occupation">Nghề nghiêp</label></td>
+                    <td>
+                        <select name="occupation" id="occupation">
+                            <option value="student">Học sinh</option>
+                            <option value="teacher">Giáo viên</option>
+                            <option value="doctor">Bác sĩ</option>
+                            <option value="engineer">Kỹ sư</option>
+                            <option value="others">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="goods">Chọn sản phẩm tham gia</label></td>
+                    <td>
+                        <select name="goods" id="goods">
+                            <option value="none">Chọn sản phẩm</option>
+                            <option value="laptop">Laptop</option>
+                            <option value="phone">Điện thoại</option>
+                            <option value="tablet">Máy tính bảng</option>
+                            <option value="others">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="guess">Dự đoán số người tham gia</label></td>
+                    <td><input type="text" id="guess" name="guess"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="width: 100%">
+                        <div style="display: flex; justify-content: center">
+                            <button id="button">Gửi</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="status" style="display: flex; justify-content: center">
+                            Chưa có thông tin
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <script>
+          const button = document.getElementById("button")
+          button.addEventListener("click", (event) =>
+          {
+            // prevent behaviour of button
+            event.preventDefault()
+            console.log("hello")
+            const status = document.getElementById("status")
+            status.innerText = "Bạn đã đăng kí thành công"
+          })
+        </script>
+    </form>
+</body>
+</html>
