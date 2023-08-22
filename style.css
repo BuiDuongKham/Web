@@ -1,0 +1,50 @@
+*{
+    border-color: #bebebe;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+a:hover
+{
+    color: #06c;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.article-1 {
+    display: flex;
+    flex-direction: column;
+    width: 234px;
+}
+
+.content {
+    display: flex;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 600;
+}
+.article-thumb{
+    width: 516px;
+    height: 572px;
+}
+.right-block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 521px;
+}
+.right-article
+{
+    width: 300px;
+    height: 80px;
+    display: flex;
+}
