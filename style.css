@@ -1,0 +1,106 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+.logo{
+    box-sizing: border-box;
+    width: 100%;
+    background: #cccccc;
+    font-size: 30px;
+    font-family:"Footlight MT Light", serif;
+    color: #456545;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-weight: 900;
+    padding-left: 30px;
+}
+.nav-bar
+{
+    box-sizing: border-box;
+    text-transform: uppercase;
+    padding-left: 50px;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    background: #609a60;
+}
+.nav-link{
+    color: #dddddd;
+    margin-bottom: 5px;
+    margin-top: 5px;;
+}
+.nav-link :hover{
+    color: blue;
+}
+.vertical-stick{
+    border: solid black 1px;
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px
+}
+.left-block{
+    width: 70%;
+}
+.right-block
+{
+    width: 30%;
+}
+.thumbnail{
+    width: 100%;
+}
+.small-article{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+.small-thumb
+{
+    width: 50%;
+}
+.top-left-block
+{
+display: flex;
+    justify-content: space-between;
+}
+.big-thumb-block{
+    width: 60%;
+}
+.small-thumb-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 35%;
+    font-size: small;
+    font-weight: light;
+}
+.description{
+    width: 50%;
+}
+.horizontal-stick{
+    width: 100%;
+    border: solid 1px #9f9d9d;
+}
+.article-type-2{
+    display: flex;
+    gap: 10px;
+    background: lightgray;
+}
+.article-type-2-image{
+    width: 30%;
+}
