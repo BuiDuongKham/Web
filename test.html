@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .blue-bg
+    {
+      background: blue;
+    }
+    .green-bg
+    {
+      background: green;
+    }
+  </style>
+</head>
+<body>
+    <div style="padding: 10px" class="green-bg" id="area">
+      Hello
+    </div>
+    <script>
+      const area = document.getElementById('area')
+      console.log(area)
+      area.addEventListener('click', ()=>
+      {
+        area.classList.toggle('green-bg')
+        area.classList.add('blue-bg')
+      })
+    </script>
+</body>
+</html>
