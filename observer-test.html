@@ -7,179 +7,84 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-    *, *:before, *:after {
-      padding: 0px;
-      margin: 0px;
-      box-sizing: border-box;
-      overflow-x: hidden;
-    }
-    
-    body {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-    
-    .ani
-    {
-      opacity: 0;
-      transition: opacity 1s linear;
-    }
-    
-    .fancy-appearance
-    {
+    .isFocusing{
+      /*background: green;*/
       opacity: 1;
-      transition: opacity 1s linear;
+      transform: translateX(0px);
+      animation: translateToLeft 0.25s ease-in-out;
+    }
+    .firstImage{
+      opacity: 0;
+      transform: translateX(400px);
+    }
+    .image{
+      opacity: 0;
+      transform: translateX(400px);
+      animation: translateToRight 0.25s backwards ease-in-out;
     }
     
-    @keyframes fancy {
-      0% {
-        transform: translateX(-100vw);
+    @keyframes translateToRight {
+      0%{
+        transform: translateX(0px);
+        opacity: 1;
       }
-      100% {
-        transform: translateX(0);
-      }
+      100%{
+         transform: translateX(400px);
+         opacity: 0;
+       }
     }
     
-    @keyframes fancy-disappear  {
-      0% {
-        transform: translateX(0);
+    @keyframes translateToLeft {
+      0%{
+        transform: translateX(400px);
+        opacity: 0;
       }
-      100% {
-        transform: translateX(-100vw);
+      100%{
+        transform: translateX(0px);
+        opacity: 1;
       }
     }
   </style>
-
 </head>
 <body>
-<div>
-  lorem ipsum dolor sit amet, consectetur adipiscing elit. praesent non justo ex. integer suscipit, nisl a ornare
-  rhoncus, libero eros commodo eros, ultrices finibus justo orci vel velit. pellentesque orci dui, tempus pellentesque
-  ipsum sed, fringilla accumsan diam. proin eu efficitur nulla. duis feugiat euismod purus eget imperdiet. maecenas
-  aliquet metus arcu, eu molestie dolor vestibulum ultricies. nam tempus at justo ut pellentesque. cras gravida egestas
-  felis eget imperdiet.
-  integer molestie velit tellus, eu consequat ex pulvinar vitae. in hac habitasse platea dictumst. morbi sit amet sem
-  condimentum, ornare eros sed, maximus diam. vivamus vitae egestas nisi. etiam ac odio a ipsum malesuada hendrerit.
-  aliquam orci libero, aliquet iaculis risus sed, consequat lobortis augue. duis rutrum libero in mauris vulputate, id
-  commodo augue ultrices. sed placerat suscipit leo, eget tempor orci mattis vel. in dapibus, ante et imperdiet
-  ullamcorper, quam ex commodo sapien, vel accumsan lorem purus quis dui. nullam scelerisque sit amet magna gravida
-  laoreet. ut vulputate odio in pharetra pretium. quisque ultricies faucibus libero, ac pulvinar massa sollicitudin
-  faucibus. pellentesque urna sapien, feugiat eu aliquam nec, viverra at magna. orci varius natoque penatibus et magnis
-  dis parturient montes, nascetur ridiculus mus. vestibulum facilisis a orci in tincidunt. pellentesque.
-</div>
-<div>
-  lorem ipsum dolor sit amet, consectetur adipiscing elit. praesent non justo ex. integer suscipit, nisl a ornare
-  rhoncus, libero eros commodo eros, ultrices finibus justo orci vel velit. pellentesque orci dui, tempus pellentesque
-  ipsum sed, fringilla accumsan diam. proin eu efficitur nulla. duis feugiat euismod purus eget imperdiet. maecenas
-  aliquet metus arcu, eu molestie dolor vestibulum ultricies. nam tempus at justo ut pellentesque. cras gravida egestas
-  felis eget imperdiet.
-  integer molestie velit tellus, eu consequat ex pulvinar vitae. in hac habitasse platea dictumst. morbi sit amet sem
-  condimentum, ornare eros sed, maximus diam. vivamus vitae egestas nisi. etiam ac odio a ipsum malesuada hendrerit.
-  aliquam orci libero, aliquet iaculis risus sed, consequat lobortis augue. duis rutrum libero in mauris vulputate, id
-  commodo augue ultrices. sed placerat suscipit leo, eget tempor orci mattis vel. in dapibus, ante et imperdiet
-  ullamcorper, quam ex commodo sapien, vel accumsan lorem purus quis dui. nullam scelerisque sit amet magna gravida
-  laoreet. ut vulputate odio in pharetra pretium. quisque ultricies faucibus libero, ac pulvinar massa sollicitudin
-  faucibus. pellentesque urna sapien, feugiat eu aliquam nec, viverra at magna. orci varius natoque penatibus et magnis
-  dis parturient montes, nascetur ridiculus mus. vestibulum facilisis a orci in tincidunt. pellentesque.
-</div>
-<div>
-  lorem ipsum dolor sit amet, consectetur adipiscing elit. praesent non justo ex. integer suscipit, nisl a ornare
-  rhoncus, libero eros commodo eros, ultrices finibus justo orci vel velit. pellentesque orci dui, tempus pellentesque
-  ipsum sed, fringilla accumsan diam. proin eu efficitur nulla. duis feugiat euismod purus eget imperdiet. maecenas
-  aliquet metus arcu, eu molestie dolor vestibulum ultricies. nam tempus at justo ut pellentesque. cras gravida egestas
-  felis eget imperdiet.
-  integer molestie velit tellus, eu consequat ex pulvinar vitae. in hac habitasse platea dictumst. morbi sit amet sem
-  condimentum, ornare eros sed, maximus diam. vivamus vitae egestas nisi. etiam ac odio a ipsum malesuada hendrerit.
-  aliquam orci libero, aliquet iaculis risus sed, consequat lobortis augue. duis rutrum libero in mauris vulputate, id
-  commodo augue ultrices. sed placerat suscipit leo, eget tempor orci mattis vel. in dapibus, ante et imperdiet
-  ullamcorper, quam ex commodo sapien, vel accumsan lorem purus quis dui. nullam scelerisque sit amet magna gravida
-  laoreet. ut vulputate odio in pharetra pretium. quisque ultricies faucibus libero, ac pulvinar massa sollicitudin
-  faucibus. pellentesque urna sapien, feugiat eu aliquam nec, viverra at magna. orci varius natoque penatibus et magnis
-  dis parturient montes, nascetur ridiculus mus. vestibulum facilisis a orci in tincidunt. pellentesque.
-</div>
-<div>
-  lorem ipsum dolor sit amet, consectetur adipiscing elit. praesent non justo ex. integer suscipit, nisl a ornare
-  rhoncus, libero eros commodo eros, ultrices finibus justo orci vel velit. pellentesque orci dui, tempus pellentesque
-  ipsum sed, fringilla accumsan diam. proin eu efficitur nulla. duis feugiat euismod purus eget imperdiet. maecenas
-  aliquet metus arcu, eu molestie dolor vestibulum ultricies. nam tempus at justo ut pellentesque. cras gravida egestas
-  felis eget imperdiet.
-  integer molestie velit tellus, eu consequat ex pulvinar vitae. in hac habitasse platea dictumst. morbi sit amet sem
-  condimentum, ornare eros sed, maximus diam. vivamus vitae egestas nisi. etiam ac odio a ipsum malesuada hendrerit.
-  aliquam orci libero, aliquet iaculis risus sed, consequat lobortis augue. duis rutrum libero in mauris vulputate, id
-  commodo augue ultrices. sed placerat suscipit leo, eget tempor orci mattis vel. in dapibus, ante et imperdiet
-  ullamcorper, quam ex commodo sapien, vel accumsan lorem purus quis dui. nullam scelerisque sit amet magna gravida
-  laoreet. ut vulputate odio in pharetra pretium. quisque ultricies faucibus libero, ac pulvinar massa sollicitudin
-  faucibus. pellentesque urna sapien, feugiat eu aliquam nec, viverra at magna. orci varius natoque penatibus et magnis
-  dis parturient montes, nascetur ridiculus mus. vestibulum facilisis a orci in tincidunt. pellentesque.
-</div>
-<div>
-  lorem ipsum dolor sit amet, consectetur adipiscing elit. praesent non justo ex. integer suscipit, nisl a ornare
-  rhoncus, libero eros commodo eros, ultrices finibus justo orci vel velit. pellentesque orci dui, tempus pellentesque
-  ipsum sed, fringilla accumsan diam. proin eu efficitur nulla. duis feugiat euismod purus eget imperdiet. maecenas
-  aliquet metus arcu, eu molestie dolor vestibulum ultricies. nam tempus at justo ut pellentesque. cras gravida egestas
-  felis eget imperdiet.
-  integer molestie velit tellus, eu consequat ex pulvinar vitae. in hac habitasse platea dictumst. morbi sit amet sem
-  condimentum, ornare eros sed, maximus diam. vivamus vitae egestas nisi. etiam ac odio a ipsum malesuada hendrerit.
-  aliquam orci libero, aliquet iaculis risus sed, consequat lobortis augue. duis rutrum libero in mauris vulputate, id
-  commodo augue ultrices. sed placerat suscipit leo, eget tempor orci mattis vel. in dapibus, ante et imperdiet
-  ullamcorper, quam ex commodo sapien, vel accumsan lorem purus quis dui. nullam scelerisque sit amet magna gravida
-  laoreet. ut vulputate odio in pharetra pretium. quisque ultricies faucibus libero, ac pulvinar massa sollicitudin
-  faucibus. pellentesque urna sapien, feugiat eu aliquam nec, viverra at magna. orci varius natoque penatibus et magnis
-  dis parturient montes, nascetur ridiculus mus. vestibulum facilisis a orci in tincidunt. pellentesque.
-</div>
-<div id="image-box" class="image-box" style="display: flex; align-items: center; flex-direction: column">
-  <div class="image ani">
-    <img class="" height="300" src="images.jpg" alt="img">
+  <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px">
+    <div class="firstImage" style="padding: 10px;">
+      <img height="300px" src="mi_tron_520.png" alt="img"/>
+    </div>
+    <div class="firstImage" style="padding: 10px;">
+      <img height="300px" src="mi_tron_520.png" alt="img"/>
+    </div>
+    <div class="firstImage" style="padding: 10px;">
+      <img height="300px" src="mi_tron_520.png" alt="img"/>
+    </div>
   </div>
-  <div class="image ani">
-    <img class="" height="300" src="85-852985_jungle-png-image-jungle-png-transparent-png-removebg-preview.png" alt="img">
-  </div>
-  <div class="image ani">
-    <img class="" height="300" src="6a6504d3-cách-nấu-mì-gói-ngon.webp" alt="img">
-  </div>
-  <div class="image ani">
-    <img class="" height="300" src="mi_tron_520.png" alt="img">
-  </div>
-</div>
-<div>
-  
-  
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non justo ex. Integer suscipit, nisl a ornare
-  rhoncus, libero eros commodo eros, ultrices finibus justo orci vel velit. Pellentesque orci dui, tempus pellentesque
-  ipsum sed, fringilla accumsan diam. Proin eu efficitur nulla. Duis feugiat euismod purus eget imperdiet. Maecenas
-  aliquet metus arcu, eu molestie dolor vestibulum ultricies. Nam tempus at justo ut pellentesque. Cras gravida egestas
-  felis eget imperdiet.
-  
-  Integer molestie velit tellus, eu consequat ex pulvinar vitae. In hac habitasse platea dictumst. Morbi sit amet sem
-  condimentum, ornare eros sed, maximus diam. Vivamus vitae egestas nisi. Etiam ac odio a ipsum malesuada hendrerit.
-  Aliquam orci libero, aliquet iaculis risus sed, consequat lobortis augue. Duis rutrum libero in mauris vulputate, id
-  commodo augue ultrices. Sed placerat suscipit leo, eget tempor orci mattis vel. In dapibus, ante et imperdiet
-  ullamcorper, quam ex commodo sapien, vel accumsan lorem purus quis dui. Nullam scelerisque sit amet magna gravida
-  laoreet. Ut vulputate odio in pharetra pretium. Quisque ultricies faucibus libero, ac pulvinar massa sollicitudin
-  faucibus. Pellentesque urna sapien, feugiat eu aliquam nec, viverra at magna. Orci varius natoque penatibus et magnis
-  dis parturient montes, nascetur ridiculus mus. Vestibulum facilisis a orci in tincidunt. Pellentesque.
-</div>
 </body>
 <script>
-  const observer = new IntersectionObserver( (entries, observer) =>
+  const imagesList = document.getElementsByClassName('firstImage')
+  const observer = new IntersectionObserver((entries, observer) =>
   {
-    entries.forEach((entry) =>
-    {
-      if (entry.isIntersecting)
+    entries.forEach(entry =>
       {
-        // entry.target.classList.toggle('fancy-disappearance')
-        entry.target.classList.toggle('fancy-appearance')
+        if (entry.isIntersecting)
+        {
+          entry.target.classList.remove('firstImage')
+          entry.target.classList.remove('image')
+          entry.target.classList.add('isFocusing')
+        }
+        else if (entry.target.classList.contains('firstImage'))
+        {
+        
+        } else
+        {
+          entry.target.classList.remove('isFocusing')
+          entry.target.classList.add('image')
+        }
       }
-      else
-      {
-        // entry.target.classList.toggle('fancy-appearance')
-        // entry.target.classList.add('fancy-disappearance')
-      }
-    })
-  }, {threshold: 0.5})
-  const images = document.getElementsByClassName("image")
-  for (const image of images) {
-    observer.observe(image)
+    )
+  },{threshold: 1})
+  
+  for (const imagesListElement of imagesList) {
+    observer.observe(imagesListElement)
   }
 </script>
 </html>
