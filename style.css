@@ -1,0 +1,95 @@
+.banner-ads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Notice{
+    background: #000;
+    color: #fff;
+}
+
+#Notice .heading{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem 0.5rem;
+    border-left: 10px solid orange;
+}
+#Notice .content{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    gap: 10px;
+}
+
+#EditorPick .heading{
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#EditorPick .content{
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+}
+
+#EditorPick .content .big-article{
+    display: block;
+    width: 100%;
+    color: black;
+}
+#EditorPick .content .small-article{
+    display: block;
+    width: 100%;
+    color: black;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.2rem;
+}
+
+#star-life{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+}
+
+#star-life .heading{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;; 
+    border-left: 10px solid orange;
+    padding-left: 10px;
+}
+
+#star-life .vedette-article{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    color: black;
+}
+
+#star-life .normal-article{
+    display: block;
+    color: black;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#contact .heading{
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;; 
+    padding: 5px 0px   ;
+}
+
+#contact .content{
+    color: gray;
+}
