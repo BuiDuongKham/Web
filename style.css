@@ -1,0 +1,25 @@
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.nav-link
+{
+    color: gray;
+    font-weight: bold;
+    align-self: self-end;
+}
+.nav-link:hover
+{
+    color: darkred;
+}
+.thumbnail-image{
+    
+}
+.thumbnail-image:hover{
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+}
