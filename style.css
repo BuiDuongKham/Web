@@ -1,0 +1,168 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+#headbar
+{
+    background: orange;
+    color: white;
+    font-size: xx-large;
+    font-weight: 700;
+    padding: 10px 0 10px 100px;
+}
+
+#nav-bar{
+    display: flex;
+    padding: 10px 20px 10px 100px;
+    background: darkred;
+    color: white;
+    gap: 20px;
+    font-weight: 600;
+}
+.vertical-stick{
+    border: 1px solid white;
+}
+#main-page{
+    padding: 10px 100px;
+}
+#hover:hover #dropdown{
+    display: block;
+    opacity: 1;
+}
+#top-articles{
+    display: grid;
+    grid-auto-flow: column ;
+    grid-template-columns: 5fr 3fr;
+    gap: 50px;
+}
+
+.big-article{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 4fr 6fr;
+    gap: 20px;
+    color: black; 
+}
+
+.big-article .big-articles-thumb{
+    width: 100%;
+}
+
+.big-article .big-articles-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.big-article .big-articles-description{
+    color: gray;
+}
+
+#single-article{
+    color: black;
+    display: block;
+}
+#single-article img{
+    width: 100% ;
+}
+#single-article .title{
+    font-size: 22px;
+    font-weight: 700;
+}
+#single-article .description
+{
+    font-weight: 200;
+    color: gray;
+}
+
+#three-indexes
+{
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+}
+
+#three-indexes .header{
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 30px;
+    border-left: 10px solid darkorange;
+}
+#three-indexes .vedette{
+    display: block;
+    margin-top: 20px;
+    color: black;
+    height: 450px;
+}
+#three-indexes .vedette img
+{
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+j
+#three-indexes .vedette .description{
+    color: gray;
+    font-weight: 200;
+}
+#three-indexes .minor{
+    margin: 10px 0px;
+    text-align: justify;
+}
+#three-indexes .minor a{
+    font-weight: bold;
+    color: black;
+    text-align: justify;
+}
+
+#popular{
+    margin-top: 20px;
+}
+
+#popular .header{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: solid 3px orange;
+    padding: 5px;
+}
+
+#popular a{
+    display: flex;
+    color: black;
+    margin: 10px 0px;
+}
+#popular a span{
+    display: inline-block;
+}
+#popular a .prefix{
+    font-weight: bolder;
+    font-size: 50px;
+    margin-right: 20px;
+}
+ 
+#popular-content{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px
+}
+
+#popular-content .title{
+    padding: 10px 0;
+}
+
+#tham-do .header{
+    display: inline-block;
+    border-bottom: solid 1px black;
+}
+
+#tham-do .title{
+    font-weight: bold;
+}
+
+#block-end{
+    background: darkred;
+    padding: 30px;
+    border-top: 2px solid darkorange;
+}

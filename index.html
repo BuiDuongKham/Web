@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <title>Document</title>
+</head>
+<body>
+<!--  Header-->
+<div id="headbar">
+  Hot News
+</div>
+<!--Nav Bar-->
+<div id="nav-bar">
+  <div>
+    <a href="#"> <i class="fa-solid fa-house"></i>Trang chủ</a>
+  </div>
+  <div class="vertical-stick"></div>
+  <div id="hover" style="position:relative;">
+    <a href="#"> Học Đường</a>
+    <div id="dropdown" style="position:absolute; top: 20px; left: 0; width: 150px">
+      <div  style="background: #deb213;color: white">
+        <div>
+         Du học 
+        </div>
+        <div style="border: 1px solid white; margin: 5px 0"></div>
+        <div>
+          Thi THPT
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="vertical-stick"></div>
+  <div>
+    <a href="#"> Đời sống</a>
+  </div>
+  <div class="vertical-stick"></div>
+  <div>
+    <a href="#"> Thế giới</a>
+  </div>
+</div>
+
+<!--Main Page-->
+<div id="main-page">
+  <div id="top-articles">
+    <div style="display: flex; flex-direction: column; gap: 20px">
+      <!--      Olympia-->
+      <a style="display: block" href="#">
+        <div class='big-article'>
+          <img class="big-articles-thumb" src="images/olym.jpg" alt="olympia">
+          <div>
+            <div class="big-articles-title">
+              Quán quân Olympia được khen nức nở vì 1 câu nói
+            </div>
+            <div>
+              <span style="font-weight: bold">Học đường</span>
+              - 4 giờ trước
+            </div>
+            <div class="big-articles-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie.
+            </div>
+          </div>
+        </div>
+      </a>
+      <!--      My dinh-->
+      <a style="display: block" href="#">
+        <div class='big-article'>
+          <img class="big-articles-thumb" src="images/svdmydinh.webp" alt="mydinh">
+          <div>
+            <div class="big-articles-title">
+              Tìm ra danh tính cô gái cở khẩu trang trên sân vận động Mỹ Đình, thừa nhận hám fame
+            </div>
+            <div>
+              <span style="font-weight: bold">Đời sống</span>
+              - 5 giờ trước
+            </div>
+            <div class="big-articles-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie.
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!--        Single-->
+    <a href="#" id="single-article">
+      <img src="images/giaxetnghiem.jpg" alt="covid19"/>
+      <div class="title">
+        Ngày 18/11, Hà Nội ghi nhận kỷ lục covid 19, 114 ca cộng đồng
+      </div>
+      <div class="description">
+        Theo CDC Hà Nội, trong ngày 18/11, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        molestie.
+      </div>
+    </a>
+  </div>
+  
+  <!--    3 indexes-->
+  <div id="three-indexes">
+    <div>
+      <div class="header">
+        STAR
+      </div>
+      <a href="#" class="vedette">
+        <img src="images/ly-dich-phong-1664848985993.webp" alt="chinese"/>
+        <h3>Lý Dịch Phong bị bắt tại trận đi khách sạn 2 ngày 1 đêm với trai lạ</h3>
+        <div class="description">
+          Đây không phải lần đầu tiênLý Dịch Phong bị bắt tại trận đi khách sạn 2 ngày 1 đêm với trai lạ
+         </div>
+      </a>
+      <div class="minor">
+        <a href="#">Hội bạn thân Next Top 11 năm của Đàm Thu T ipsum dolor sit amet, conseur adipisicing elit. </a>
+      </div>
+      <div class="minor">
+        <a href="#">Hơn 5 tháng sau khi qua đời, Facebook cố hoa hậu thu thủy bất ngờ chia sẻ lại bài đăng đă </a>
+      </div>
+    </div>
+    <div>
+      <div class="header">
+        ĐỜI SỐNG 
+      </div>
+      <div class="vedette">
+        <a href="#"class="vedette">
+          <img src="images/vi-dien-tu.jpg" alt="e-pay"/>
+          <h3>Zoom vào cách chúng ta dùng ví điện tử để thấy khác biệt thế hệ</h3>
+          <div class="description">
+            Zoom vào cách chúng ta dùng ví điện tử để thấy khác biệt thế hệ vào cách chúng ta dùng ví điện tử để thấy khác biệt thế hệ Zoom vào cách chúng ta dùng ví điện tử để thấy khác biệt thế hệ
+          </div>
+        </a>
+      </div>
+      <div class="minor">
+        <a href="#">Người đàn ông là trà xanh của sơn tùng, có vị trí đặc biệt trong lòng Sơn Tùngj</a>
+      </div>
+      <div class="minor">
+        <a href="#">Cô gái cởi khẩu trang trên SVD Mỹ Đình thừa nhânj hám fame</a>
+      </div>
+    </div>
+    <div>
+      <div class="header">
+        XÃ HỘI 
+      </div>
+      <div class="vedette">
+        <a href="#"class="vedette">
+          <img src="images/covid-da-nang.jpg" alt="danang"/>
+          <h3>Đà Nắng khẩn trương tìm người nhiễm covid 19</h3>
+          <div class="description">
+            Đà Nắng khẩn trương tìm người khẩn trương tìm người nh Lore cum, deserunt dicta eveniet excepturi ipsum maiores nam neque odit. Aliquid earum facilis incidunt itaque mollitia numquam quod sequi velit.
+          </div>
+        </a>
+      </div>
+      <div class="minor">
+        <a href="#">TPHCM có thể tiếp nhận hơn 120.000 F0 trong cùng 1 thời điểm</a>
+      </div>
+      <div class="minor">
+        <a href="#">Đau bụng dữ dội, phát hiện túi sỏi mật hóa thạch</a>
+      </div>
+    </div>
+  </div>
+  
+<!--  Popular-->
+  <div id="popular">
+    <div class="header">
+      Xem nhiều
+    </div>
+    <div id="popular-content"> 
+      <div>
+        <a href="#">
+          <div class="prefix">1</div>
+          <div class="title">VinFast e35 - SUV phong cach coupe ra mắt tại Mỹ</div>
+        </a>
+        <a href="#">
+          <div class="prefix">2</div>
+          <div class="title">Đội hình đắt giá từng đá cho ĐTQG</div>
+        </a>
+        <a href="#">
+          <div class="prefix">3</div>
+          <div class="title">Phiên tòa cạn tình của triệu phu</div>
+        </a>
+        <a href="#">
+          <div class="prefix">4</div>
+          <div class="title">Cô gái bị hoại tử chưa từng thấy do tiêm thuốc tan mỡ</div>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <div class="prefix">5</div>
+          <div class="title">Mesi không theo kịp tốc độc trận BR-ARG</div>
+        </a>
+        <a href="#">
+          <div class="prefix">6</div>
+          <div class="title">Sống mòn trong chung cư chờ cải tạo</div>
+        </a>
+        <a href="#">
+          <div class="prefix">7</div>
+          <div class="title">Ngoài giờ làm chồng tôi không muốn đi bất kì đâu</div>
+        </a>
+        <a href="#">
+          <div class="prefix">8</div>
+          <div class="title">Tiêm kích anh tàng hình lao xuống biển</div>
+        </a>
+      </div>
+      <div id="tham-do">
+        <div class="header">Thăm dò</div> 
+        <div class="title">Vì sao bạn muốn đầu tư vào bất động sản thời điểm này</div>
+        <div>
+          <form style="height: 100px; overflow: auto;display: flex; flex-direction: column; justify-content: space-between">
+            <div>
+              <input type="radio" id="thuatien">
+              <label for="thuatien">Do tài chính dư dả mà chưa biết đầu tư kinh doanh gì</label>  
+            </div>
+            <div>
+              <input type="radio" id="nhieu-du-an">
+              <label for="nhieu-du-an">Thời điểm hiện tại có nhiều dự án mở bán, nguồn cung nhiều nhát trong vài năm...</label>
+            </div>
+            <div>
+              <input type="radio" id="lua-dao">
+              <label for="lua-dao">Thời điểm hiện tại có nhiều dự án mở bán, nguồn cung nhiều nhát trong vài năm, còn lại là lừa đảo </label>
+            </div>
+          </form>
+          <div>
+            <button style="display: block; width: 100%; padding: 10px; margin-top: 30px; border: 1px solid transparent; color: white; background: orange;">
+              Tiếp tục
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="block-end">
+  </div>
+</div>
+</body>
+</html>
